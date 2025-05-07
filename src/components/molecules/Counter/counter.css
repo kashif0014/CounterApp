@@ -1,0 +1,30 @@
+  .counter {
+    display: flex;
+    flex-flow: column;
+    padding: 3rem 2rem;
+    border: 1px solid #cccccc;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    margin: 2px;
+  }
+
+  .counter__title{
+    font-size: 3rem;
+    line-height: 1.1;
+    padding-bottom:2rem ;
+ }
+
+  .counter__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .counter__value {
+    min-width: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
