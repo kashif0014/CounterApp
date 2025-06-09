@@ -1,0 +1,14 @@
+.progressContainer{
+    width:50vw;
+    border:2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progressinner{
+    background-color: red;
+    text-align: right;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    padding-right: 20px;
+}

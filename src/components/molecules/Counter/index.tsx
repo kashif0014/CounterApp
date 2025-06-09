@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './counter.css';
 import { Button } from "../../atoms/Button";
 
@@ -8,6 +8,8 @@ import { Button } from "../../atoms/Button";
 const initialCounterValue = 0;
 
 const [count, setCount] = useState(initialCounterValue);
+// const [data, setData] = useState(null);
+
 
   const handleIncrement = () => {
     setCount(prev => prev + 1);
@@ -21,6 +23,54 @@ const [count, setCount] = useState(initialCounterValue);
     setCount(initialCounterValue);
   };
 
+// Fetching data from an API
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  //       const json = await response.json();
+  //       setData(json);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+
+  // Given a string("IndiaIsCountryIamfromIndiaILiveInIndia"), The print  each character  with its count with descending order count using  js features. 
+  
+  // *string is case insensitive
+
+//   const countCharacterString= (str:string) => {
+//     const count = {};
+
+//     for(const char of str){
+//       count[char] = (count[char] || 0) +1;
+// }
+
+//     const sortedCount = Object.entries(count).sort((a, b) => b[1] - a[1]);
+
+//     const sortedResult = new Map();
+//     for(const[char, freq] of sortedCount){
+//       sortedResult.set(char, freq);
+//     }
+    
+    
+//     return sortedResult;
+
+//   }
+
+
+  // const output = countCharacterString("IndiaIsCountryIamfromIndiaILiveInIndia");
+
+  // console.log("Character count in descending order:", output);
+
+ 
+
+// Use dev-id or online compilar to run program
+ 
   const disabledButton = count === initialCounterValue;
 
   return (
